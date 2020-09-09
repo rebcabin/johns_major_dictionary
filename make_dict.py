@@ -120,8 +120,8 @@ def main():
         with open("num_to_words.pkl", "rb") as infile:
             new_dict = pickle.load(infile)
             pprint.pprint({'142': new_dict['142'],
-                           'thing': word_to_numseq('thing'),
-                           'think': word_to_numseq('think')})
+                           'thing': eng_word_to_numseq('thing'),
+                           'think': eng_word_to_numseq('think')})
 
     except FileNotFoundError as ed:
         try:
