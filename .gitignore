@@ -1,0 +1,16 @@
+.hypothesis/
+prof/
+__pycache__/
+*.pyc
+.cache/
+.mypy_cache/
+venv/
+# build-example/*
+*~
+build/
+build/*
+.idea/
+.idea/*
+
+*.pyc
+*.pkl
