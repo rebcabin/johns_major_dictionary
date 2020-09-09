@@ -7,24 +7,6 @@ from typing import *
 from maps import num_to_phones, phone_to_num
 
 
-# Mapping from number to sounds
-num_to_phones = {0: ['s', 'z'],
-                 1: ['t', 'd', 'ð', 'θ'],
-                 2: ['n'],
-                 3: ['m'],
-                 4: ['r'],
-                 5: ['l'],
-                 6: ['ʤ', 'ʧ', 'ʃ', 'ʒ'],
-                 7: ['k', 'g', 'ŋ'],
-                 8: ['f', 'v'],
-                 9: ['p', 'b']}
-
-# Reverse mapping from sound to number
-phone_to_num = {x: k
-                for k, v in num_to_phones.items()
-                for x in v}
-
-
 def ipa_to_numseq(ipa_word: str):
     """Convert IPA to number sequence."""
     result = []
