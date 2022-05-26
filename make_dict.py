@@ -108,7 +108,7 @@ def main():
 
     except FileNotFoundError as ed:
         try:
-            with open('/usr/share/dict/american-english', 'r') as file:
+            with open('./american-english', 'r') as file:
                 global hit_count
                 global miss_count
                 global lines
